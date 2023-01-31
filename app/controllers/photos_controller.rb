@@ -9,7 +9,13 @@ class PhotosController < ApplicationController
   end
 
   # GET /photos/1 or /photos/1.json
+  # def show
+  #   unless PhotoPolicy.new(current_user, @photo).show?
+  #     raise Pundit::NotAuthorizedError, "not allowed"
+  #   end
+  # end
   def show
+    authorize @photo
   end
 
   # GET /photos/new

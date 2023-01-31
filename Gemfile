@@ -60,7 +60,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'active_link_to'
 gem 'devise'
 gem 'faker'
-gem 'pundit'
+gem 'pundit', require: true
 gem "strip_attributes"
 gem "validate_url"
 
